@@ -1,0 +1,10 @@
+body {
+    background-color: #fff;
+}
+
+#hat-canvas {
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
