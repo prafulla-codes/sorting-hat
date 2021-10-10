@@ -1,0 +1,10 @@
+
+
+#hat-canvas {
+    margin-top: 15%;
+    z-index: 1;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

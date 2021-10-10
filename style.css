@@ -5,16 +5,9 @@ html {
 }
 
 
-img {
-  position: absolute;
-  z-index: 1;
-  padding-top: 50px;
-  padding-left: 350px;
-}
 
 .wrapper {
   position: relative;
-  z-index: 0;
 }
 
 #title {
