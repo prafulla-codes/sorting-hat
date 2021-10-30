@@ -1,10 +1,71 @@
 
-
-#hat-canvas {
-    margin-top: 15%;
-    z-index: 1;
-    position: relative;
+:root {
+    --hat-color:#312802;
+    --hat-eye-color:#010101;
+}
+#hat-main {
+    margin-top: 15vh;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    width: 20rem;
+    height: 20rem;
+    display: none;
+    text-shadow: 12px 12px 30px 30px rgba(168, 47, 47, 0.199);
+}
+#thoughts {
+
+    color:white;
+    margin-top: 30px;
+    font-family: sans-serif;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+    overflow: hidden;
+
+}
+@keyframes type{ 
+    from { width: 0; } 
+  } 
+#hat-eye-left {
+    opacity: 0;
+}
+
+#hat-eye-right {
+    opacity: 0;
+}
+
+#hat-mouth {
+    opacity: 0;
+}
+
+
+@keyframes initialize-hat {
+    from {fill: var(--hat-color);opacity: 0 }
+    to {fill:  var(--hat-color);opacity: 1}
+}
+
+@keyframes hat-floating {
+	0% {
+		text-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.767);
+		transform: translateY(0px);
+	}
+	50% {
+		text-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translateY(-20px);
+	}
+	100% {
+		text-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.925);
+		transform: translateY(0px);
+	}
+}
+
+@keyframes initialize-hat-eyes {
+    from {opacity: 0}
+    to {fill: var(--hat-eye-color);opacity: 1;}
+}
+@keyframes initialize-hat-mouth {
+    from {fill:#000;opacity: 0}
+    to {fill:#000;opacity: 1;}
 }

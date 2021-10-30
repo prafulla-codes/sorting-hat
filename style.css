@@ -1,10 +1,37 @@
 html {
     height: 100%;
     overflow: hidden;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+    background: #000;
+
 }
 
+#sort-btn {
+    margin-left: auto;
+    margin-right:auto;
+    display: block;
+    margin-top: 5rem;
+    width: 16rem;
+    height: 3rem;
+    border-radius:25px;
+    border:none;
+    color: #ffff;
+    font-weight: normal;
+    font-size: 1.2rem;
+    background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);
 
+}
+#sort-btn:hover {
+    cursor:pointer;
+}
+
+@keyframes disappear {
+    to {opacity: 0}
+}
+@keyframes initialize-scene {
+    from  {background: #000}
+    to {    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+    }
+}
 
 .wrapper {
   position: relative;

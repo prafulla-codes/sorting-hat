@@ -1,44 +1,48 @@
-let canvas = document.getElementById("hat-canvas");
-let context = canvas.getContext("2d");
-let scale = 1;
+class Hat {
 
+    static THOUGHTS = [
+        {
+            thought : "You seem to be a little shy...",
+            color: "green"
+        }
+    ]
 
-function initializeHat() {
+    intialize(scene = null, animation = "none", ANIM_TIME = 1){
+        let hat = document.getElementById("hat-main");
+        let hatBackground = document.getElementById("hat-bg");
+        let hatEyeLeft = document.getElementById("hat-eye-left")
+        let hatEyeRight = document.getElementById("hat-eye-right")
+        let hatMouth = document.getElementById("hat-mouth")
 
-    context.moveTo(0*scale,100*scale);
-    context.strokeStyle = '#493716';
-    context.fillStyle = '#493716';
+        hat.style.display="block";
+        hatBackground.style.animation=`${ANIM_TIME}s initialize-hat forwards`;
+        hatEyeLeft.style.animation=`${ANIM_TIME}s  initialize-hat-eyes forwards 1s`;
+        hatEyeRight.style.animation=`${ANIM_TIME}s  initialize-hat-eyes forwards 1s`;
+        hatMouth.style.animation=`${ANIM_TIME}s  initialize-hat-mouth forwards 1.5s`;
+
+        if(scene != null && animation !="none"){
+            scene.style.animation = animation;
+        }
+    } 
     
-    context.lineTo(0*scale,90*scale);
-    context.stroke();
-    context.lineTo(100*scale,90*scale);
-    context.stroke();
-    context.lineTo(100*scale,100*scale);
-    context.stroke();
-    context.lineTo(0*scale,100*scale);
-    context.stroke();
-    context.fill();
-    
-    
-    context.moveTo(10*scale,80*scale);
-    
-    context.lineTo(90*scale,80*scale);
-    context.stroke();
-    context.lineTo(70*scale,35*scale);
-    context.stroke();
-    context.lineTo(80*scale,0*scale);
-    context.stroke();
-    context.lineTo(45*scale,32*scale);
-    context.stroke();
-    context.lineTo(10*scale,80*scale);
-    context.stroke();
-    context.fill();
-    
+    float(ANIM_TIME) {
+        let hat = document.getElementById("hat-main");
+        hat.style.animation= `hat-floating ${ANIM_TIME}s ease-in-out infinite`
+    }
+
+    think(ANIME_TIME){
+        let thoughts = document.getElementById("thoughts");
+        let randomThought = this.getRandomThought();
+        thoughts.innerText = Hat.THOUGHTS[randomThought].thought;
+        thoughts.style.animation = "type 5s steps(60,start)";
+    }
+
+     getRandomThought() {
+        let min = 0;
+        let max = Hat.THOUGHTS.length - 1;
+        let index = Math.floor(Math.random() * (max - min + 1) + min); 
+        return index;
+      }
+      
 }
-
-initializeHat();
-
-
-
-
 
