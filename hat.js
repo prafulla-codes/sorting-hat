@@ -4,6 +4,10 @@ class Hat {
         {
             thought : "You seem to be a little shy...",
             color: "green"
+        },
+        {
+            thought : "You seem bold :)",
+            color: "green"
         }
     ]
 
@@ -30,11 +34,12 @@ class Hat {
         hat.style.animation= `hat-floating ${ANIM_TIME}s ease-in-out infinite`
     }
 
-    think(ANIME_TIME){
+    think(ANIM_TIME){
         let thoughts = document.getElementById("thoughts");
         let randomThought = this.getRandomThought();
         thoughts.innerText = Hat.THOUGHTS[randomThought].thought;
-        thoughts.style.animation = "type 5s steps(60,start)";
+        thoughts.style.animation = `type ${ANIM_TIME}s`;
+        setTimeout(()=> this.think(ANIM_TIME),ANIM_TIME*1000)
     }
 
      getRandomThought() {
@@ -45,4 +50,3 @@ class Hat {
       }
       
 }
-
