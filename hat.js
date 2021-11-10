@@ -1,15 +1,50 @@
+
+const TEAMS = {
+    GRYFFINDOR : 1,
+    SLYTHERIN : 2,
+    RAVENCLAW : 3,
+    HUFFLEPUFF : 4
+}
+
+let CURRENT_TEAM = 0;
 class Hat {
 
     static THOUGHTS = [
         {
-            thought : "You seem to be a little shy...",
-            color: "green"
+            thought: "Feeling Brave, are you?",
+            team: TEAMS.GRYFFINDOR
         },
         {
-            thought : "You seem bold :)",
-            color: "green"
+            thought : "You seem to be the chivalrous sort",
+            team : TEAMS.GRYFFINDOR
+        },
+        {
+            thought : "A bottomless well of ambition!",
+            team : TEAMS.SLYTHERIN
+        },
+        {
+            thought : "Your pride might be your downfall",
+            team : TEAMS.SLYTHERIN
+        },
+        {
+            thought : "There is much patience in you",
+            team : TEAMS.HUFFLEPUFF
+        },
+        {
+            thought : "Your sense of loyalty is strong",
+            team : TEAMS.HUFFLEPUFF
+        },
+        {
+            thought : "You are the careful sort",
+            team : TEAMS.RAVENCLAW
+        },
+        {
+            thought : "You are Witted! Quick witted ? Or a Half Wit",
+            team : TEAMS.RAVENCLAW
         }
     ]
+
+
 
     intialize(scene = null, animation = "none", ANIM_TIME = 1){
         let hat = document.getElementById("hat-main");
@@ -34,12 +69,25 @@ class Hat {
         hat.style.animation= `hat-floating ${ANIM_TIME}s ease-in-out infinite`
     }
 
+    stopThinking(){
+        document.getElementById('landing').style.animation = "2s disappear forwards";
+        setTimeout(()=>this.displayBadgePage(),2000);
+    }
+
+    displayBadgePage(){
+        let badgePage = document.getElementsByTagName('body')[0];
+        badgePage.style.animation= "";
+        badgePage.style.backgroundColor='#1A472A';
+        badgePage.style.animation = "2s appear forwards";
+    }
     think(ANIM_TIME){
         let thoughts = document.getElementById("thoughts");
         let randomThought = this.getRandomThought();
         thoughts.innerText = Hat.THOUGHTS[randomThought].thought;
+        CURRENT_TEAM = Hat.THOUGHTS[randomThought].team;
         thoughts.style.animation = `type ${ANIM_TIME}s`;
         setTimeout(()=> this.think(ANIM_TIME),ANIM_TIME*1000)
+        
     }
 
      getRandomThought() {
@@ -49,4 +97,5 @@ class Hat {
         return index;
       }
       
+
 }
