@@ -77,7 +77,7 @@ class Hat {
     displayBadgePage(){
         let badgePage = document.getElementsByTagName('body')[0];
         badgePage.style.animation= "";
-        badgePage.style.backgroundColor='#1A472A';
+        badgePage.style.backgroundColor='';
         badgePage.style.animation = "2s appear forwards";
     }
     think(ANIM_TIME){

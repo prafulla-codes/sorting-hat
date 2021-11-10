@@ -59,8 +59,26 @@ body {
 } 
 
 @keyframes appear {
-    from {background-size: 0%;}
-    to {background-size: 100%;}
+    
+    
+    from{
+        background-image: linear-gradient(135deg, #1A472A 50%, black 50%);
+        background-position: left -100vw;
+    }
+    to{
+        background-image: #1A472A;
+        background-position: right 0vw;
+        transition: background-image 2000ms linear;
+        
+    } 
+    /* 50%{
+        left: 0vw;
+         background-image: #1A472A; 
+    }
+    100%{
+        left: 100vw;
+        background-color: #1A472A;
+    } */
 }
 @keyframes move-stars {
     0%{transform: translateX(0)}
