@@ -78,7 +78,7 @@ class Hat {
         let badgePage = document.getElementsByTagName('body')[0];
         badgePage.style.animation= "";
         badgePage.style.backgroundColor='';
-        badgePage.style.animation = "2s appear forwards";
+        badgePage.style.animation = "6.5s appear forwards";
     }
     think(ANIM_TIME){
         let thoughts = document.getElementById("thoughts");
