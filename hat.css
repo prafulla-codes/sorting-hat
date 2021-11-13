@@ -30,6 +30,7 @@
 }
 @keyframes type{ 
     from { width: 0; } 
+    to { width: 100%;}
   } 
 #hat-eye-left {
     opacity: 0;
@@ -72,3 +73,11 @@
     from {fill:#000;opacity: 0}
     to {fill:#000;opacity: 1;}
 }
+
+@media only screen and (max-width: 600px) {
+
+    #thoughts {
+        font-size: 3rem;
+        display: flex;
+    }
+  }

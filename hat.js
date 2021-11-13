@@ -2,8 +2,8 @@
 const TEAMS = {
     GRYFFINDOR : {id:1,color:'#740001',name:'gryffindor'},
     SLYTHERIN : {id:2,color:'#1A472A',name:'slytherin'},
-    RAVENCLAW : {id:3,color:'#0E1A40',name:'hufflepuff'},
-    HUFFLEPUFF : {id:4,color:'#ECB939',name:'ravenclaw'}
+    RAVENCLAW : {id:3,color:'#0E1A40',name:'ravenclaw'},
+    HUFFLEPUFF : {id:4,color:'#ECB939',name:'hufflepuff'}
 }
 
 let CURRENT_TEAM = null;
@@ -82,10 +82,10 @@ class Hat {
         badgeDiv.setAttribute("class","badge-div");
         badgeDiv.style.backgroundColor=color;
         badgeDiv.innerHTML = `
-        <img src='./pics/${name}.svg' class='badge-image'></img>
+        <img src='./pics/${name}.png' class='badge-image'></img>
         <h2 class="congrats hp"> Congratulations </h2>
-        <p class='badge-description'> You have been sorted into <strong>${name.charAt(0).toUpperCase() + name.slice(1)}</strong> </p>
-        <img src='./pics/${name}_badge.png' class='badge'></img>
+        <div class="badge-alert"> You have been sorted into <strong>${name.charAt(0).toUpperCase() + name.slice(1)} </p>
+        <img src='./pics/${name}_badge.png' class='badge'></img></div>
         `
         badgeDiv.style.animation= "0.5s appear1 3s forwards";
         document.getElementById('landing').appendChild(badgeDiv);
@@ -102,7 +102,7 @@ class Hat {
         let randomThought = this.getRandomThought();
         thoughts.innerText = Hat.THOUGHTS[randomThought].thought;
         CURRENT_TEAM = Hat.THOUGHTS[randomThought].team;
-        thoughts.style.animation = `type ${ANIM_TIME}s`;
+        thoughts.style.animation = `type ${ANIM_TIME}s forwards`;
         setTimeout(()=> this.think(ANIM_TIME),ANIM_TIME*1000)
         
     }
