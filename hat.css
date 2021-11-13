@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: 'HP';
+    src: url('./fonts/HP.ttf') format('truetype');
+}
 :root {
     --hat-color:#a77916;
     --hat-eye-color:#010101;
@@ -13,17 +16,17 @@
     text-shadow: 12px 12px 30px 30px rgba(168, 47, 47, 0.199);
 }
 #thoughts {
-
+    font-size: 3rem;
     color:white;
     margin-top: 30px;
-    font-family: sans-serif;
+    font-family: 'HP',sans-serif;
     white-space: nowrap;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    font-weight: normal;
     width: 30em;
     overflow: hidden;
-
 }
 @keyframes type{ 
     from { width: 0; } 

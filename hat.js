@@ -83,7 +83,7 @@ class Hat {
         badgeDiv.style.backgroundColor=color;
         badgeDiv.innerHTML = `
         <img src='./pics/${name}.svg' class='badge-image'></img>
-        <h2 class="congrats"> Congratulations! </h2>
+        <h2 class="congrats hp"> Congratulations </h2>
         <p class='badge-description'> You have been sorted into <strong>${name.charAt(0).toUpperCase() + name.slice(1)}</strong> </p>
         <img src='./pics/${name}_badge.png' class='badge'></img>
         `
