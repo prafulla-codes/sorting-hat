@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "shridhar-coder",
+      "name": "shridhar-coder",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59767163?v=4",
+      "profile": "https://github.com/shridhar-coder",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "sorting-hat",
+  "projectOwner": "prafulla-codes",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
