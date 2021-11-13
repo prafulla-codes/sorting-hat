@@ -1,7 +1,7 @@
 var confetti = {
 	maxCount: 150,		//set max confetti count
 	speed: 2,			//set the particle animation speed
-	frameInterval: 15,	//the confetti animation frame interval in milliseconds
+	frameInterval: 30,	//the confetti animation frame interval in milliseconds
 	alpha: 1.0,			//the alpha opacity of the confetti (between 0 and 1, where 1 is opaque and 0 is invisible)
 	gradient: false,	//whether to use gradients for the confetti particles
 	start: null,		//call to start confetti animation (with optional timeout in milliseconds, and optional min and max random confetti count)
@@ -103,7 +103,7 @@ var confetti = {
 		if (canvas === null) {
 			canvas = document.createElement("canvas");
 			canvas.setAttribute("id", "confetti-canvas");
-			canvas.setAttribute("style", "display:block;z-index:999999;pointer-events:none;position:fixed;top:0");
+			canvas.setAttribute("style", "display:block;z-index:999999;z-index:0;pointer-events:none;position:fixed;top:0");
 			document.body.prepend(canvas);
 			canvas.width = width;
 			canvas.height = height;

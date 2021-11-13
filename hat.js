@@ -92,7 +92,10 @@ class Hat {
         document.documentElement.style.setProperty("--page-color", color);
 
         badgePage.style.animation = "3s appear forwards ease";
-
+        setTimeout(()=> {
+            confetti.start()
+            confetti.speed = 1;
+        },3000);
     }
     think(ANIM_TIME){
         let thoughts = document.getElementById("thoughts");
