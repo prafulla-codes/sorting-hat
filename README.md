@@ -1,6 +1,6 @@
 <h3 align="center"><img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/gh_cover.png" width="60%"></h3>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <a href="#"><img src="https://img.shields.io/badge/CONTRIBUTIONS-WELCOME-GREEN?style=for-the-badge&logo=github&labelColor=black" href="#"></img></a>
@@ -20,6 +20,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/shridhar-coder"><img src="https://avatars.githubusercontent.com/u/59767163?v=4?s=100" width="100px;" alt=""/><br /><sub><b>shridhar-coder</b></sub></a><br /><a href="https://github.com/prafulla-codes/sorting-hat/commits?author=shridhar-coder" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Devavrat8492"><img src="https://avatars.githubusercontent.com/u/74722351?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Devavrat Sarpotdar</b></sub></a><br /><a href="https://github.com/prafulla-codes/sorting-hat/commits?author=Devavrat8492" title="Code">💻</a></td>
   </tr>
 </table>
 
