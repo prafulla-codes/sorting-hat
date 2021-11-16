@@ -74,10 +74,16 @@
     to {fill:#000;opacity: 1;}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
 
     #thoughts {
-        font-size: 3rem;
+        font-size: 2rem;
         display: flex;
     }
+    #hat-main {
+        margin-top: 10vh;
+    width: 12rem;
+    height: 12rem;
   }
+
+ 

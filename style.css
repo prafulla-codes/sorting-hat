@@ -12,6 +12,8 @@ html {
     background: #000;
     padding: 0;
     margin: 0;
+    overflow: hidden;
+    width: 100%;
 }
 .badge-alert { 
     background-color: #212121;
@@ -44,7 +46,8 @@ body {
     margin: 0%;
     padding: 0%;
     width: 100%;
-
+    top: 0;
+    left: 0;
     height: 100%;
 }
 .star {
@@ -96,9 +99,6 @@ body {
     
 @keyframes octocat-wave
 {0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}
-@media (max-width:500px){
-    .github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}
-} 
 
 /* body {
     background-color: linear-gradient(135deg, #1A472A 50%, black 50%);
@@ -179,3 +179,20 @@ body {
         transform: translateX(-2000px);
     }
 }
+
+@media (max-width:500px){
+    .hp {
+        font-size: 2rem;
+    }
+    .github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}
+    #sort-btn {
+        margin-top: 1rem;
+        width: 10rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    .badge-div {
+        width:80%;
+        height:50%;
+    }
+} 

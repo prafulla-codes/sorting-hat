@@ -9,6 +9,19 @@ const STAR_ANIMATION_TIME = 20;
 let hat = new Hat();
 let start_time = 0;
 let scene = document.getElementsByTagName("html")[0];
+    var elem = document.getElementsByTagName("html")[0];
+
+document.addEventListener('click',()=>{
+    let audio = document.getElementById("background_music");
+    if(audio.autoplay == false) 
+    {
+        audio.muted = false
+        audio.autoplay = true
+        audio.play();
+
+    }
+})
+
 hat.intialize(scene,"1s initialize-scene forwards",ANIM_TIME);
 
 document.getElementById('sort-btn').addEventListener('click',()=>{
