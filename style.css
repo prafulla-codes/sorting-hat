@@ -35,14 +35,16 @@ html {
     color: #fff;
 }
 .badge {
-    width: 15rem;
+    width: 80%;
+    height: auto;
 }
 .badge-image {
     width: 10rem;
     margin-top: 2rem;
 }
 body {
-    position: absolute;;
+    position: absolute;
+    overflow-x: hidden;
     margin: 0%;
     padding: 0%;
     width: 100%;
@@ -194,5 +196,6 @@ body {
     .badge-div {
         width:80%;
         height:50%;
+        padding-bottom: 1rem;
     }
 } 

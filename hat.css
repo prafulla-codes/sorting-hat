@@ -77,13 +77,17 @@
 @media only screen and (max-width: 500px) {
 
     #thoughts {
+        align-items: center;
+        width: 80%;
         font-size: 2rem;
         display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
     #hat-main {
         margin-top: 10vh;
     width: 12rem;
     height: 12rem;
   }
-
+}
  

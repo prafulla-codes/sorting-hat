@@ -15,7 +15,7 @@ class Hat {
             team: TEAMS.GRYFFINDOR
         },
         {
-            thought : "You seem to be the chivalrous sort",
+            thought : "You seem to be a chivalrous sort",
             team : TEAMS.GRYFFINDOR
         },
         {
@@ -39,7 +39,7 @@ class Hat {
             team : TEAMS.RAVENCLAW
         },
         {
-            thought : "You are Witted! Quick witted ? Or a Half Wit",
+            thought : "Quick witted? Or a Half Wit?",
             team : TEAMS.RAVENCLAW
         }
     ]
