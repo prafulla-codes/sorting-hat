@@ -81,13 +81,34 @@ class Hat {
         let badgeDiv = document.createElement('div');
         badgeDiv.setAttribute("class","badge-div");
         badgeDiv.style.backgroundColor=color;
-        badgeDiv.innerHTML = `
-        <img src='./pics/${name}.png' class='badge-image'></img>
-        <h2 class="congrats hp"> Congratulations </h2>
-        <div class="badge-alert"> You have been sorted into <strong>${name.charAt(0).toUpperCase() + name.slice(1)} </p>
-        <img src='./pics/${name}_badge.gif' class='badge'></img></div>
-        `
+        // Badge Image
+        let badgeImage = document.createElement('img');
+        badgeImage.src = `./pics/${name}.png`;
+        badgeImage.setAttribute("class","badge-image");
+        badgeDiv.appendChild(badgeImage);
+        // Congratulations Text
+        let congratsText = document.createElement('h2');
+        congratsText.setAttribute("class","congrats hp");
+        congratsText.innerText = 'Congratulations';
+        badgeDiv.appendChild(congratsText);
+        // Badge Alert
+        let badgeAlert = document.createElement('div');
+        badgeAlert.setAttribute("class","badge-alert");
+        badgeAlert.innerHTML =`<p> You have been sorted into <strong>${name.charAt(0).toUpperCase() + name.slice(1)} <br> Here's your Github Badge,</p>`
+        let badge = document.createElement('img');
+        badge.src =`./pics/${name}_badge.gif`;
+        badge.title = 'Copy to clipboard';
+        badge.setAttribute("class","badge");
+        badge.addEventListener('click',()=>{
+            document.getElementsByClassName("badge")[0].title = "Copied!"
+            navigator.clipboard.writeText(`<img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/${name}_badge.gif" width="200px"></img>`);
+        })
+        badge.addEventListener('mouseout',()=> badge.title = 'Copy to clipboard');
+        badgeAlert.appendChild(badge);
+        badgeDiv.appendChild(badgeAlert)
+
         badgeDiv.style.animation= "0.5s appear1 3s forwards";
+
         document.getElementById('landing').appendChild(badgeDiv);
         document.documentElement.style.setProperty("--page-color", color);
 

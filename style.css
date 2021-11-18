@@ -28,6 +28,7 @@ html {
     height: 30rem;
     width: 30rem;
     opacity: 0;
+    padding-bottom: 1rem;
     text-align: center;
     margin:25vh auto 0 auto;
     box-shadow: 1px 1px 30px -2px rgba(0,0,0,0.71);
@@ -172,6 +173,13 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.badge:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+
 
 @keyframes animStar {
     from {
@@ -196,6 +204,6 @@ body {
     .badge-div {
         width:80%;
         height:50%;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
 } 
