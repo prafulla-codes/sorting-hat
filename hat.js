@@ -85,7 +85,7 @@ class Hat {
         <img src='./pics/${name}.png' class='badge-image'></img>
         <h2 class="congrats hp"> Congratulations </h2>
         <div class="badge-alert"> You have been sorted into <strong>${name.charAt(0).toUpperCase() + name.slice(1)} </p>
-        <img src='./pics/${name}_badge.png' class='badge'></img></div>
+        <img src='./pics/${name}_badge.gif' class='badge'></img></div>
         `
         badgeDiv.style.animation= "0.5s appear1 3s forwards";
         document.getElementById('landing').appendChild(badgeDiv);
