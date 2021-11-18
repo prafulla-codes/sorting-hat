@@ -1,4 +1,4 @@
-<p align="center"><a href="https://gh-sorting-hat.netlify.app/" target="blank_"><img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/gh_cover.png" width="60%"></a></p>
+<p align="center"><a href="https://gh-sorting-hat.netlify.app/" target='_blank'><img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/gh_cover.png" width="60%"></a></p>
 
 <p align="center">
 🧹 Want to know which Hogwarts House would you fall into?
