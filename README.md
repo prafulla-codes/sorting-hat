@@ -1,14 +1,17 @@
 <h3 align="center"><img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/gh_cover.png" width="60%"></h3>
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-<a href="#"><img src="https://img.shields.io/badge/CONTRIBUTIONS-WELCOME-GREEN?style=for-the-badge&logo=github&labelColor=black" href="#"></img></a>
 <p align="center">
 🧹 Want to know which Hogwarts House would you fall into?
 Come and let the Sorting Hat cast judgement upon you! 
 Fall into one of the 4 Great Houses of Hogwarts and win a GitHub Badge to showcase on your github profile :)
 </p>
+
+## Badges 
+
+<img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/gryffindor_badge.gif" width="200px"></img>
+<img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/slytherin_badge.gif" width="200px"></img>
+<img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/hufflepuff_badge.gif" width="200px"></img>
+<img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/ravenclaw_badge.gif" width="200px"></img>
 
 ## Contributors ✨
 
