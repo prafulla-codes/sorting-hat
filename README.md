@@ -32,6 +32,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/shridhar-coder"><img src="https://avatars.githubusercontent.com/u/59767163?v=4?s=100" width="100px;" alt=""/><br /><sub><b>shridhar-coder</b></sub></a><br /><a href="https://github.com/prafulla-codes/sorting-hat/commits?author=shridhar-coder" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Devavrat8492"><img src="https://avatars.githubusercontent.com/u/74722351?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Devavrat Sarpotdar</b></sub></a><br /><a href="https://github.com/prafulla-codes/sorting-hat/commits?author=Devavrat8492" title="Code">💻</a></td>
+    <td align="center"><a href="https://prafulla.tech"><img src="https://avatars.githubusercontent.com/u/36433104?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Prafulla Raichurkar</b></sub></a><br /><a href="https://github.com/prafulla-codes/sorting-hat/commits?author=prafulla-codes" title="Code">💻</a></td>
   </tr>
 </table>
 
