@@ -25,7 +25,7 @@ html {
     border-radius: 10px;
 }
 .badge-div {
-    height: 30rem;
+    min-height: 30rem;
     width: 30rem;
     opacity: 0;
     padding-bottom: 1rem;
@@ -38,6 +38,18 @@ html {
 .badge {
     width: 80%;
     height: auto;
+}
+.copied {
+    background-color:  rgba(0, 0, 0, 0.507);
+    color: #fff;
+    padding: 0.5rem;
+    width: 80px;
+    margin-left: auto;
+    opacity: 0;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-top: 1.5px;
+    animation: 2s appear1 forwards;
 }
 .badge-image {
     width: 10rem;
@@ -112,6 +124,10 @@ body {
     to {background-color:  #1A472A;}
   } */
 
+@keyframes appear1 {
+    from {opacity: 0;}
+    to {opacity:  1;}
+}
 @keyframes appear {
     
     
@@ -127,6 +143,14 @@ body {
     }
    
  
+}
+
+.notification {
+    background-color: #000;
+    color: #fff;
+    padding: 2px;
+    display: none;
+    z-index: 4;
 }
 @keyframes appear1 {
     to { opacity: 1;}
@@ -167,6 +191,7 @@ body {
     padding-left: 10px;
 }
 
+
 #title span {
     background: -webkit-linear-gradient(white, #38495a);
     -webkit-background-clip: text;
@@ -203,7 +228,10 @@ body {
     }
     .badge-div {
         width:80%;
-        height:50%;
+        min-height:50%;
         padding-bottom: 2rem;
+    }
+    .badge-image {
+        width: 5rem;
     }
 } 

@@ -85,6 +85,8 @@ class Hat {
         let badgeImage = document.createElement('img');
         badgeImage.src = `./pics/${name}.png`;
         badgeImage.setAttribute("class","badge-image");
+        badgeImage.innerHTML=`<img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/hufflepuff_badge.gif" width="200px">
+        </img>`;
         badgeDiv.appendChild(badgeImage);
         // Congratulations Text
         let congratsText = document.createElement('h2');
@@ -95,17 +97,31 @@ class Hat {
         let badgeAlert = document.createElement('div');
         badgeAlert.setAttribute("class","badge-alert");
         badgeAlert.innerHTML =`<p> You have been sorted into <strong>${name.charAt(0).toUpperCase() + name.slice(1)} <br> Here's your Github Badge,</p>`
+        // badge
         let badge = document.createElement('img');
         badge.src =`./pics/${name}_badge.gif`;
         badge.title = 'Copy to clipboard';
         badge.setAttribute("class","badge");
-        badge.addEventListener('click',()=>{
-            document.getElementsByClassName("badge")[0].title = "Copied!"
-            navigator.clipboard.writeText(`<img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/${name}_badge.gif" width="200px"></img>`);
+        // Copied
+        let copied = document.createElement('div');
+        copied.setAttribute('class','copied');
+        copied.innerText = ` Copied !`;
+
+        badge.addEventListener('click',(e)=>{
+            badgeAlert.appendChild(copied);
+
+               
+               document.getElementsByClassName("badge")[0].title = "Copied!";
+            navigator.clipboard.writeText(`<img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/${name}_badge.gif" width="200px">`);
         })
-        badge.addEventListener('mouseout',()=> badge.title = 'Copy to clipboard');
+        badge.addEventListener('mouseout',()=>  {
+            badgeAlert.removeChild(copied);
+      
+            badge.title = 'Copy to clipboard' });
         badgeAlert.appendChild(badge);
         badgeDiv.appendChild(badgeAlert)
+        
+        
 
         badgeDiv.style.animation= "0.5s appear1 3s forwards";
 
